@@ -17,7 +17,7 @@ import com.example.demo.service.BookService;
 public class BookController {
 
 	@Autowired
-	private BookService bookService;
+	private BookService bookService
 	
 	@GetMapping(value= "/getbook", produces = {"application/json"})
 	public Book getBookDetails(@RequestParam("bid") String bid){
